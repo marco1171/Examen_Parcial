@@ -1,0 +1,98 @@
+button { /*tamaño y colores*/
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #0066ff;
+}
+
+#nuestros-programas { /*tamaño del titulo*/
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-programas .container { /*tamaño*/
+  padding: 150px 12px;
+}
+
+#nuestros-programas h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p {
+  display: none;
+}
+
+#nuestros-programas .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  #nuestros-programas .programas {  /*tamaño y colocacion de los textos*/
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestros-programas p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestros-programas h2 {
+    font-size: 4em;
+  }
+
+  #nuestros-programas h3 {
+    margin-top: 0;
+  }
+
+  #nuestros-programas .carta {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+ 
+  .carta:first-child {   /*aqui insertamos las imagenes y definimos otras cosas*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("nin.jpg");
+  }
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("xbox.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("play.jpg");
+}

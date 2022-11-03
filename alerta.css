@@ -1,0 +1,5 @@
+/*sirve para dar color */
+.c-color {
+  alert-color: blue;
+  alert-border-color: transparent;
+}

@@ -1,0 +1,9 @@
+.item2 {  /*tamaño*/
+  height: 400px;
+}
+
+.img2 {  /*tamaño y propiedades de las imagenes*/
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.6);
+}

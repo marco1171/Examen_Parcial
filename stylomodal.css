@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/*Còdigos universales de la pàgina*/
+* {  /*tamaños*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/*---*/
+body,  /*cuerpo del modakl*/
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {  /*colores y propiedades*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-modal:checked ~ .modal { /*aqui hacemos que sea visible*/
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor {  /*aqui donde aparece el modal y se desplaza*/
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+  position: relative;
+  transform: translateY(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor { /*regresa a la coordenada 0*/
+  transform: translateY(0%);
+}
+.contenedor header {  /*colores del modal*/
+  padding: 10px;
+  background: #1b2838;
+  color: #fff;
+}
+.contenedor label { /*copmo se vera el boton de cerrar*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contenido {   /*com se vera el ocntenido*/
+  width: 100%;
+  padding: 10px;
+}
+.contenido h3 {
+  margin-bottom: 10px;
+}
+.contenido p {
+  margin-bottom: 7px;
+}
+#btn-modal {
+  display: none;
+}
+.lbl-modal {
+  background: #1b2838;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) { /*tamaños generales*/
+  .contenedor {
+    width: 95%;
+  }
+}

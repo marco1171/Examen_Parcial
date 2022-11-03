@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--aqui se guardaran todos los compiadores necesarios, hojas de estilo-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible " content="IE = edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style_slider1.css" />
+    <link rel="stylesheet" href="style_slider2.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <div
+      class="alert alert-warning alert-dismissible fade show bg-dark text-light"
+      role="alert"
+    >
+      <strong>¡Bienvenido a mi Pagina!</strong> Esta pagina esta creada con el
+      fin de dar a conocer los juegos
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      >
+        
+      </button>
+    </div>
+
+    <title>SEVENGAMES</title>
+  </head>
+  <!--termino del head-->
+
+  <body style="background-color: #2a475e">
+    <!--body primario aqui adentro ira lo que es el programa que se ejecutara-->
+    <!--barra de arriba-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=""></a>
+        <img
+          src="logo.jpg"
+          alt="Bootstrap"
+          width="60"
+          height="60"
+          class="rounded-circle"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href=""
+                >PAGINA PRINCIPAL</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#historia">RECOMENDADOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#nuestros-programas"
+                >PROVEEDORES</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >CLASIFICACIONES</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="">E (Para todo el publico)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">T (Para adolescentes)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">M (Para Mayores de 17)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">A (Solo para adultos)</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href=""
+                    >Las clasificaciones ayudan a saber que juegos son
+                    apropiados</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MIS JUEGOS</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Recientes</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href=""
+                    >no has iniciado sesion para ver tu biblioteca</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a class="navbar-brand" href="formulario.html">
+            <img
+              src="arg2.png"
+              alt="Bootstrap"
+              width="50"
+              height="50"
+              class="rounded-circle"
+            />
+          </a>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-3"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-primary">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--termino de la brra de navegacion-->
+
+    <!--empieza el body de barra lateral-->
+    <div class="container-fluid overflow-hidden">
+      <div class="row vh-100 overflow-auto">
+        <div
+          class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top"
+        >
+          <div
+            class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-2 pt-2 text-white"
+          >
+            <a
+              href=""
+              class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            ></a>
+
+            <ul
+              class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#promociones" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-house"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >PROMOCIONES</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a href="#catalogoj" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-speedometer2"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >DESCUBRIR</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-table"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >COMUNIDAD</span
+                  ></a
+                >
+              </li>
+
+              <li class="dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle px-sm-0 px-1"
+                  id="dropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fs-5 bi-bootstrap"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >PREORDENES</span
+                  >
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark text-small shadow"
+                  aria-labelledby="dropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/">juegos de estreno</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/">comprar lanzamientos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/">proximos lanzamientos</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#Rebajas" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-grid"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >REBAJAS</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-people"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >SUBASTA</span
+                  ></a
+                >
+              </li>
+
+              <li>
+                <a href="#juegosgratis" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-people"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >FREETOPLAY</span
+                  ></a
+                >
+              </li>
+
+              <li>
+                <a href="modal.html" class="nav-link px-sm-0 px-2">
+                  <i class="fs-5 bi-people"></i
+                  ><span class="ms-1 d-none d-sm-inline text-light"
+                    >AVISOS SEVENGAMES</span
+                  ></a
+                >
+              </li>
+            </ul>
+
+            <div
+              class="dropdown py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1"
+            >
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="logo.jpg"
+                  alt="hugenerd"
+                  width="60"
+                  height="60"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline mx-1">SEVENGAMES</span>
+              </a>
+
+              <ul
+                class="dropdown-menu dropdown-menu-dark text-small shadow"
+                aria-labelledby="dropdownUser1"
+              >
+                <li><a class="dropdown-item" href="">Ayuda</a></li>
+                <li><a class="dropdown-item" href="">Comentarios</a></li>
+                <li><a class="dropdown-item" href="">Acerca de..</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="">Regresar</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col py-3">
+          <!--aqui sigue la barra de navegacion abierta para insertar los demas componentes-->
+
+          <!--parte de enmedio aqui empieza los carrusele-->
+          <section>
+            <div
+              id="hero-carousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#hero-carousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#hero-carousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#hero-carousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#hero-carousel"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <!--div inicial de los sliders-->
+
+                <div class="carousel-item active c-item">
+                  <img src="1.jpeg" class="d-block w-100 c-img" alt="Slide 1" />
+                  <div class="carousel-caption top-0 mt-4">
+                    <p class="text-uppercase fs-3 mt-5"></p>
+                  </div>
+                </div>
+
+                <div class="carousel-item c-item">
+                  <img src="2.jpg" class="d-block w-100 c-img" alt="Slide 2" />
+                  <div class="carousel-caption top-0 mt-4"></div>
+                </div>
+
+                <div class="carousel-item c-item">
+                  <img src="3.webp" class="d-block w-100 c-img" alt="Slide 3" />
+                  <div class="carousel-caption top-0 mt-4"></div>
+                </div>
+
+                <div class="carousel-item c-item">
+                  <img src="4.jpg" class="d-block w-100 c-img" alt="Slide 4" />
+                  <div class="carousel-caption top-0 mt-4"></div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#hero-carousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#hero-carousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!--div termino inicial-->
+            </div>
+          </section>
+          <!--termino del slider/carrusel-->
+
+          <br />
+          <!--empieza el boton-->
+
+          <div id="catalogoj" class="d-grid gap-2">
+            <button type="button" class="btn btn-dark">Nuestro Catalogo</button>
+          </div>
+
+          <br /><!--termina el boton-->
+
+          <div class="grid-container">
+            <!--inicio de las grids-->
+
+            <div class="grid-item">
+              <img src="1q.jpg" class="d-block w-100 imgg" alt="1" />
+            </div>
+            <div class="grid-item">
+              <img src="2q.jpg" class="d-block w-100 imgg" alt="2" />
+            </div>
+            <div class="grid-item">
+              <img src="4q.jpg" class="d-block w-100 imgg" alt="3" />
+            </div>
+            <div class="grid-item">
+              <img src="5q.jpg" class="d-block w-100 imgg" alt="4" />
+            </div>
+            <div class="grid-item">
+              <img src="6q.jpg" class="d-block w-100 imgg" alt="5" />
+            </div>
+            <div class="grid-item">
+              <img src="7.jpg" class="d-block w-100 imgg" alt="6" />
+            </div>
+            <div class="grid-item">
+              <img src="8.jpg" class="d-block w-100 imgg" alt="7" />
+            </div>
+            <div class="grid-item">
+              <img src="9.jpg" class="d-block w-100 imgg" alt="8" />
+            </div>
+            <div class="grid-item">
+              <img src="10.jpg" class="d-block w-100 imgg" alt="9" />
+            </div>
+            <div class="grid-item">
+              <img src="11.webp" class="d-block w-100 imgg" alt="10" />
+            </div>
+            <div class="grid-item">
+              <img src="12.webp" class="d-block w-100 imgg" alt="11" />
+            </div>
+            <div class="grid-item">
+              <img src="13.jpg" class="d-block w-100 imgg" alt="12" />
+            </div>
+            <div class="grid-item">
+              <img src="14.jpg" class="d-block w-100 imgg" alt="13" />
+            </div>
+            <div class="grid-item">
+              <img src="15.jpg" class="d-block w-100 imgg" alt="14" />
+            </div>
+            <div class="grid-item">
+              <img src="16.jpg" class="d-block w-100 imgg" alt="15" />
+            </div>
+          </div>
+          <!--termino de los grid-->
+
+          <!--botton para separar el card-->
+
+          <div id="historia" class="d-grid gap-2">
+            <button type="button" class="btn btn-dark">
+              Juegos Con Buena Historia
+            </button>
+          </div>
+
+          <br />
+
+          <div class="card-group">
+        <!--grid para ver algunas historias de juegos-->
+
+            <div class="card" style="background-color: #171a21">
+              <img src="5.jpeg" class="card-img-top" alt="1" height="565px" />
+              <div class="card-body">
+                <h5 class="card-title text-light">Halo Reach</h5>
+                <p class="card-text text-light">
+                  El juego transcurre en el año 2552, donde la humanidad
+                  mantiene una guerra con el Covenant. El jugador controla a un
+                  nuevo personaje llamado Noble 6, un super soldado miembro del
+                  Equipo «Noble» durante la batalla en la colonia humana de
+                  Reach.
+                </p>
+              </div>
+              <div class="card-footer" style="background-color: #171a21">
+                <small class="text-muted text-light"
+                  >Año de salida 14 de septiembre del 2010</small
+                >
+              </div>
+            </div>
+            <div class="card" style="background-color: #171a21">
+              <img src="er2.png" class="card-img-top" alt="2" height="565px" />
+              <div class="card-body">
+                <h5 class="card-title text-light">Elden Ring</h5>
+                <p class="card-text text-light">
+                  En el juego el personaje jugador es un Sinluz, un miembro de
+                  un grupo de exiliados de las Tierras Intermedias que fueron
+                  convocados de vuelta tras la Guerra de la Devastación. Como un
+                  Sinluz, el jugador debe atravesar las Tierras Intermedias para
+                  reparar el Círculo de Elden y convertirse en el Señor del
+                  Círculo.
+                </p>
+              </div>
+              <div class="card-footer" style="background-color: #171a21">
+                <small class="text-muted text-light"
+                  >Año de salida 25 de febrero del 2022</small
+                >
+              </div>
+            </div>
+            <div class="card" style="background-color: #171a21">
+              <img src="fr6.gif" class="card-img-top" alt="3" height="565px" />
+              <div class="card-body">
+                <h5 class="card-title text-light">Far Cry 6</h5>
+                <p class="card-text text-light">
+                  El juego se desarrolla en Yara, una isla caribeña ficticia que
+                  yace bajo una dictadura liderada por "El Presidente" Antón
+                  Castillo quien está preparando a su hijo, Diego, para que
+                  continúe con su mandato.
+                </p>
+              </div>
+              <div class="card-footer" style="background-color: #171a21">
+                <small class="text-muted text-light"
+                  >Año de salida 7 de octubre del 2021</small
+                >
+              </div>
+            </div>
+          </div>
+          <!--cierre de el grid con historias de juegos-->
+
+          <br />
+          <br />
+          <br />
+
+          <!--segundo boton para separar cards-->
+
+          <div id="Rebajas" class="d-grid gap-2">
+            <button type="button" class="btn btn-dark">Rebajas</button>
+          </div>
+
+          <br />
+          <!--aqui va la parte de enlaces-->
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="cp2077.jpg"
+                  class="card-img-top"
+                  alt="1"
+                  height="300px"
+                />
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-light">CyberPunk2077</h5>
+                  <p class="card-text text-light">
+                    descuento del 50%, aprovecha la oferta
+                  </p>
+                  <a href="ventana1.html" class="btn btn-primary text-center"
+                    >ir a..</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="hfw.jpg"
+                  class="card-img-top"
+                  alt="2"
+                  height="300px"
+                />
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-light">Horizon Zero Dawn</h5>
+                  <p class="card-text text-light">
+                    descuento del 75%, aprovecha la oferta
+                  </p>
+                  <a href="ventana2.html" class="btn btn-primary text-center"
+                    >ir a..</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="reb.jpg"
+                  class="card-img-top"
+                  alt="3"
+                  height="300px"
+                />
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-light">Resident Evil 7</h5>
+                  <p class="card-text text-light">
+                    descuento del 65%, aprovecha la oferta
+                  </p>
+                  <a href="ventana3.html" class="btn btn-primary text-center"
+                    >ir a..</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="doom.webp"
+                  class="card-img-top"
+                  alt="4"
+                  height="300px"
+                />
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-light">Doom</h5>
+                  <p class="card-text text-light">
+                    descuento del 85%, aprovecha ahora
+                  </p>
+                  <a href="ventana4.html" class="btn btn-primary text-center"
+                    >ir a..</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--termina la parte de enlaces-->
+
+          <br />
+          <br />
+          <br />
+
+          <div id="promociones" class="d-grid gap-2">
+            <button type="button" class="btn btn-dark">Promociones</button>
+          </div>
+
+          <br />
+          <!--inicia la parte de promociones-->
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="cod2.jpg"
+                  class="card-img-top"
+                  alt="aa1"
+                  height="300px"
+                />
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-light">Call of Duty MW2</h5>
+                  <p class="card-text text-light">
+                    compra el juego del 1-15 de nomviembre
+                  </p>
+                  <p class="card-text text-light">Acceso anticipado</p>
+                  <br />
+                  <a href="" class="btn btn-primary text-center">ir a..</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="cod.jpg"
+                  class="card-img-top"
+                  alt="aa2"
+                  height="300px"
+                />
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-light">Edicion boveda deluxe</h5>
+                  <p class="card-text text-light">
+                    si compras el juego se te hara un descuento del 10%, de
+                    regalo paquete de armas edicion boveda.
+                  </p>
+                  <p class="card-text text-light">
+                    skins unicas en la compra del juego
+                  </p>
+                  <a href="" class="btn btn-primary text-center">ver mas..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--termina promociones-->
+
+          <br />
+          <br />
+          <br />
+
+          <!---apartado de juegos gratis-->
+
+          <div id="juegosgratis" class="d-grid gap-2">
+            <button type="button" class="btn btn-dark">Juegos Gratuitos</button>
+          </div>
+
+          <br />
+
+          <!--seleccion de juegos gratuitos-->
+
+          <body>
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active item2" data-bs-interval="1000">
+                  <img src="pg1.jpg" class="d-block w-100 img2" alt="a" />
+                </div>
+                <div class="carousel-item active item2" data-bs-interval="2000">
+                  <img src="sp1.jpg" class="d-block w-100 img2" alt="b" />
+                </div>
+                <div class="carousel-item active item2" data-bs-interval="900">
+                  <img src="ov1.jpg" class="d-block w-100 img2" alt="c" />
+                </div>
+                <div class="carousel-item active item2" data-bs-interval="900">
+                  <img src="wz1.jpg" class="d-block w-100 img2" alt="d" />
+                </div>
+                <div class="carousel-item active item2" data-bs-interval="900">
+                  <img src="ft1.jpg" class="d-block w-100 img2" alt="e" />
+                </div>
+                <div class="carousel-item active item2" data-bs-interval="900">
+                  <img src="fg1.jpg" class="d-block w-100 img2" alt="f" />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </body>
+          <!--termino de segundo slide-->
+          <br />
+          <br />
+
+          <!--parte de las paginas-->
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-dark" href="cargando.html">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-dark" href="cargando.html">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-dark" href="cargando.html">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-dark" href="cargando.html">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!---<aqui va la parte final de la pagina-->  <!--parte de proveedores aqui se ve quienes nos prooveen-->
+
+          <div id="nuestros-programas">
+            <div class="container">
+              <h2>NUESTROS PROVEEDORES</h2>
+              <div class="programas">
+                <div class="carta">
+                  <h3></h3>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <p>
+                    Nintendo es una de las empresas internacionales líderes de
+                    entretenimiento interactivo, y está enfocada al desarrollo,
+                    producción y venta de consolas y videojuegos.
+                  </p>
+                  <button>+ info</button>
+                </div>
+                <div class="carta">
+                  <h3></h3>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <p>
+                    xbox es una de las empresas internacionales líderes de
+                    entretenimiento interactivo, y está enfocada al desarrollo,
+                    producción y venta de consolas y videojuegos.
+                  </p>
+                  <button>+ info</button>
+                </div>
+                <div class="carta">
+                  <h3></h3>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <p>
+                    playstation es una de las empresas internacionales líderes
+                    de entretenimiento interactivo, y está enfocada al
+                    desarrollo, producción y venta de consolas y videojuegos.
+                  </p>
+                  <button>+ info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--termino de la parte de los proveedores-->
+          <br />
+          <br />
+          <br />
+<!--aqui va la parte de la localizacion -->
+          <div class="card text-bg-dark">
+            <div align="center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59227.74824830567!2d-102.33830642835409!3d21.906306357317366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef06cbcd32dd%3A0x522ffdc6f0e8af7a!2sGAMERS%20AGUASCALIENTES!5e0!3m2!1ses-419!2smx!4v1667228645403!5m2!1ses-419!2smx"
+                align="middle"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="card-img-overlay">
+              <h5 class="card-title">Encuentranos</h5>
+              <br />
+              <p class="card-text">SEVENGAMES</p>
+              <p class="card-text"><small></small>Ubicacion actualizada</p>
+            </div>
+          </div>
+<!--va la parte de la ubicacion es el termino-->
+          <br />
+          <br />
+          <br />
+<!--parte de se agrego algunos terminos-->
+          <div class="card text-bg-dark mb-3">
+            <div class="card-header">Terminos</div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">
+                Las imágenes y fichas de los productos pueden variar en
+                características, diseños y colores
+              </p>
+              <p class="card-text">
+                Los precios ya incluyen IVA y son en pesos mexicanos pagando en
+                efectivo, cualquier otro método de pago puede generar comisión.
+              </p>
+              <p class="card-text">
+                Los precios de productos en bodega de proveedor pueden cambiar
+                sin previo aviso.
+              </p>
+            </div>
+          </div>
+<!--fin de la parte de terminos-->
+          <br />
+          <br />
+          <br />
+<!--un simple texto para agregar mas chuleria a la  pagina -->
+          <p style="text-align: center">
+            Copyright © 2022 SEVENGAMES Mayorista De Tecnologia, S.A. de C.V.
+            Todos los derechos reservados, México.
+          </p>
+
+          <br />
+          <br />
+          <br />
+
+          <!---aqui se cierra todo los relacionado con el programa va la parte de la barra lateral-->
+          <!--dejalo al final-->
+        </div>
+        <!--estos son los div para cerrar la barra-->
+      </div>
+      <!--estos son los div para cerrar la barra-->
+    </div>
+    <!--estos son los div para cerrar la barra-->
+  </body>
+  <!--body primario-->
+</html>
+<!--ultimo d elo ultimo-->

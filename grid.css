@@ -1,0 +1,40 @@
+.grid-item {  /*aqui especificamos lo general que tendra el grid*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: aqua;
+  border-radius: 3px;
+  transition: tranform 3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover { 
+  transform: scale(1.04);
+}
+
+.grid-container {  /*dimensiones*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+
+.imgg {  /*aqui definimos que dimensiones tiene la imagen*/
+  height: 100%;
+  width: 100%;
+}
